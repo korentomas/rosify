@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/mainpage.css') }}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<head>
+<style>
+    body {
+        background-color: {{ color }};
+    }
+</style>
+</head>
+<body>
+<div>
+    <h1>rosify</h1>
+    <form method="POST" action="" enctype="multipart/form-data">
+        <p>pone tu nombre:</p>
+        <p><input type="text" name="name"></p>
+        <p><input type="submit" value="submit"></p>
+        <p>{{ color }}</p>
+    </form>  
+</div>
+</body>
+
+</html>
