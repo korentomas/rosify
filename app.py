@@ -23,7 +23,8 @@ def uploadFilesPB():
     # get the uploaded file
     name = request.form['name']
     color = rosify(name)
-    return render_template("index.html", color=color)
+    nameText = 'Nombre: ' + name
+    return render_template("index.html", nameText = nameText, color = color)
 
 if __name__ == "__main__":
     app.run()
